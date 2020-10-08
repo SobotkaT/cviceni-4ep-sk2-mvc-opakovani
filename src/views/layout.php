@@ -18,7 +18,7 @@
             {
         ?>
         <a href="<?php echo $zakladni_url; ?>index.php/stranky/profil/">Profil</a>
-        <a href="<?php echo $zakladni_url; ?>index.php/stranky/denicek/">Deníček</a>
+        <a href="<?php echo $zakladni_url; ?>index.php/denicky/zobrazit/">Deníček</a>
         <?php
             }
             else

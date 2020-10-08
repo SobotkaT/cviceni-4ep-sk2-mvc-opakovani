@@ -6,13 +6,15 @@ $povolene_controllery_a_akce = array(
         "domu",
         "chyba",
         "profil",
-        "denicek",
     ),
     "uzivatele" => array(
         "registrovat",
         "prihlasit",
         "odhlasit",
     ),
+    "denicky" => array(
+        "zobrazit",
+    )
 );
 
 // osetreni pro nezadany controller nebo akci
