@@ -16,8 +16,4 @@ class Stranky
     {
         require_once "views/stranky/profil.php";
     }
-
-    public function denicek(){
-        require_once "views/denicky/zobrazit.php";
-    }
 }

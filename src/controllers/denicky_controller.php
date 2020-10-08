@@ -22,7 +22,7 @@ class Denicky
         }
     }
 
-    public function zobrazit($jmeno){
+    public function zobrazit(){
         require_once "views/denicky/zobrazit/";
     }
 

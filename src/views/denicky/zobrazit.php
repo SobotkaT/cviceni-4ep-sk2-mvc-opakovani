@@ -15,7 +15,4 @@
 <hr>
 <h1>Deníček</h1><br />
 <?php
-    $denicek = Denicky::zobrazit($jmenoUzivatele);
-    /*if($denicek = "Chyba_denicek_neexistuje")
-        echo "Deník neexistuje";*/
 ?>
