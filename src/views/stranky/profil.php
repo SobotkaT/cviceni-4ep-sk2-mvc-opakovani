@@ -11,5 +11,6 @@
 <p>Jste přihlášeni jako <b><?php echo $_SESSION["prihlaseny_uzivatel"] ?></b>.</p>
 
 <form action="<?php echo $zakladni_url; ?>index.php/uzivatele/odhlasit/">
+    <br />
     <input type="submit" value="Odhlásit" />
 </form>

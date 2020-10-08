@@ -18,6 +18,7 @@
             {
         ?>
         <a href="<?php echo $zakladni_url; ?>index.php/stranky/profil/">Profil</a>
+        <a href="<?php echo $zakladni_url; ?>index.php/stranky/denicek/">Deníček</a>
         <?php
             }
             else
@@ -33,6 +34,7 @@
         <?php require_once "router.php"; ?>
     </main>
     <footer>
+        <br />
         &copy; Jakub Šenkýř, 2020
     </footer>
 </body>

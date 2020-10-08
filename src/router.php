@@ -6,6 +6,7 @@ $povolene_controllery_a_akce = array(
         "domu",
         "chyba",
         "profil",
+        "denicek",
     ),
     "uzivatele" => array(
         "registrovat",
@@ -45,6 +46,10 @@ function spustit($controller, $akce)
         case "uzivatele":
             require_once "models/Uzivatel.php";
             $aktivni_controller = new Uzivatele();
+            break;
+        case "denicky":
+            require_once "models/Denicek.php";
+            $aktivni_controller = new Denicky();
             break;
     }
 
