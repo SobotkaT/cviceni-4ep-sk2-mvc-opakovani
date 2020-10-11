@@ -1,7 +1,9 @@
 <?php
 class Denicek{
 
-    public function vytvorit_data_denicku($data, $jmeno){
+    private $data;
+
+    public static function vytvorit_data_denicku($data, $jmeno){
         $spojeni = DB::pripojit();
         mysqli_query($spojeni, "INSERT INTO 4ep_sk2_mvc_denicky (dataDenicku, uzivatel) VALUES ('$data', '$jmeno')");
         return mysqli_affected_rows($spojeni) == 1;
@@ -15,6 +17,5 @@ class Denicek{
         return $denicek;
     }
 }
-
 
 ?>

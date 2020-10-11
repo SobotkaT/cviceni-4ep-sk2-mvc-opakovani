@@ -13,7 +13,7 @@ $povolene_controllery_a_akce = array(
         "odhlasit",
     ),
     "denicky" => array(
-        "zobrazit",
+        "vytvorit",
     )
 );
 
