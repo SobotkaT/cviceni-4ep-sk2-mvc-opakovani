@@ -9,11 +9,19 @@ class Denicek{
         return mysqli_affected_rows($spojeni) == 1;
     }
 
-    public function vybrat_data_denicku($jmeno){
-
+    public static function vybrat_data_denicku($jmeno){
+        $spojeni = DB::pripojit();
         $denicek = mysqli_query($spojeni, "SELECT * FROM 4ep_sk2_mvc_denicky WHERE uzivatel = '$jmeno'");
         if(mysqli_num_rows($denicek) == 0)
-            $denicek = "Chyba_denicek_neexistuje";
+            $denicek = "V databázi není žádný deník";
+        else{
+            $i = 0;
+            while ($radek = mysqli_fetch_assoc($denicek)) {
+                $poleDenicku[$i] = $radek["dataDenicku"];
+                $i++;
+            }
+            return $poleDenicku;
+        }
         return $denicek;
     }
 }

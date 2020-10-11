@@ -16,6 +16,7 @@ class Denicky
             $jmeno = $_SESSION["prihlaseny_uzivatel"];
             $data = $_POST["denicek"];
             $denicky = Denicek::vytvorit_data_denicku($data, $jmeno);
+            return spustit("denicky","zobrazit");
         }
         else{
             require_once "views/denicky/vytvorit.php";
@@ -23,6 +24,9 @@ class Denicky
     }
 
     public function zobrazit(){
-        
+        $jmeno = $_SESSION["prihlaseny_uzivatel"];
+        $denicky = Denicek::vybrat_data_denicku($jmeno);
+        $_SESSION["denicek"] = $denicky;
+        require_once "views/denicky/zobrazit.php";
     }
 }

@@ -14,6 +14,7 @@ $povolene_controllery_a_akce = array(
     ),
     "denicky" => array(
         "vytvorit",
+        "zobrazit",
     )
 );
 
